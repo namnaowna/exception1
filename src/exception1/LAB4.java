@@ -8,14 +8,16 @@ package exception1;
  *
  * @author Student
  */
-public class LAB3 {
+public class LAB4 {
     public static void main(String[] args) {
         try {
             System.out.println("Statement 1");
             System.out.println(1/0);
-            System.out.println("Statement 3");
         }
-        catch (ArithmeticException e){
+        catch (ArrayIndexOutOfBoundsException e){
+        }
+        catch (ArithmeticException e) {
+            throw new StringIndexOutOfBoundsException();
         }
         finally {
             System.out.println("Statement 4");
